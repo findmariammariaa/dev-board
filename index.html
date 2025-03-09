@@ -1,13 +1,247 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+  <body class="bg-blue-50 p-10 pt-5">
+    <nav class="">
+      <div class="navbar bg-base-100 shadow-sm flex justify-between px-6 rounded-lg">
+        <div class="flex">
+          <img src="./assets/logo.png" alt="" />
+          <h1 class="text-3xl pt-1">Dev<b>Board</b></h1>
+        </div>
+        <div class="flex">
+          <button class="btn btn-square btn-ghost mx-15">
+            <img src="./assets/checkbox.png" alt="" />
+            <h1 class="text-3xl" id="count">29</h1>
+          </button>
+          <button class="btn btn-square btn-ghost hover:scale-105 rounded-xl">
+            <img src="./assets/theme-btn.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="main flex mt-6 ">
+      <div class="grid grid-cols-12 grid-rows-4 gap-6 bg-white p-5 w-12/15 rounded-lg">
+        <!-- Left Sidebar -->
+        <div class="col-span-3 row-span-1 bg-blue-50 p-6 rounded-xl shadow-md flex justify-between items-center">
+          
+          <img src="./assets/checkbox.png" alt="" class="w-auto">
+          <div class="px-3">
+            <span class="text-sm font-bold text-gray-500">Task Assigned</span>
+            <p class="text-4xl font-bold text-blue-600 mt-2">05</p>
+          </div>
+        </div>
+  
+        <!-- Banner -->
+        <button
+          class="btn h-auto col-span-6 row-span-1 bg-gradient-to-r from-indigo-500 to-blue-500 p-6 rounded-xl text-white text-center flex justify-center items-center  transition duration-300 hover:from-indigo-600 hover:to-blue-600 hover:scale-105"
+        >
+        <img src="./assets/board.png" alt="Calendar Icon" class="h-12 w-auto">
+          <h2 class="text-2xl font-semibold px-3">Discover Something New Today!</h2>
+        </button>
+  
+        <!-- Date Widget -->
+        <div
+          class="col-span-3 row-span-1 bg-blue-50 p-6 rounded-xl shadow-md text-center flex justify-around items-center"
+        >
+        <img src="./assets/calender.png" alt="" class="w-auto">
+          <div class="text-left">
+            <p class="text-lg">Wed,</p>
+          <p class="text-xl font-bold text-black">Jul 28 2025</p>
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div
+          class="task col-span-12 row-span-3 rounded-xl text-center"
+        >
+          <!-- Task Cards -->
+          <div class="mt-6 grid grid-cols-3 gap-6 ">
+            <div class="bg-blue-50 p-4 rounded-xl shadow-md text-left">
+              <!-- Badge -->
+              <div class="bg-white px-3 py-1 rounded-md shadow text-gray-700 text-sm font-semibold inline-block">
+                  ShopEase
+              </div>
+          
+              <!-- Title -->
+              <h2 class="text-lg font-bold mt-2">Fix Mobile Button Issue</h2>
+          
+              <!-- Description -->
+              <p class="bg-white p-2 rounded-lg text-gray-600 text-sm mt-2">
+                  Debug using Chrome DevTools, check for overlappi...
+              </p>
+          
+              <!-- Deadline & Status -->
+              <div class="flex justify-between items-end mt-4">
+                  <div>
+                      <strong class="text-gray-500 text-xs">Deadline</strong>
+                      <p class="text-gray-900 font-semibold">21 March 2025</p>
+                  </div>
+                  <button class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm font-medium  transition duration-300 hover:bg-blue-400">
+                      Completed
+                  </button>
+              </div>
+            </div>
+            <div class="bg-blue-50 p-4 rounded-xl shadow-md text-left">
+            <!-- Badge -->
+            <div class="bg-white px-3 py-1 rounded-md shadow text-gray-700 text-sm font-semibold inline-block">
+                CloudSync
+            </div>
+        
+            <!-- Title -->
+            <h2 class="text-lg font-bold mt-2">Add Dark Mode</h2>
+        
+            <!-- Description -->
+            <p class="bg-white p-2 rounded-lg text-gray-600 text-sm mt-2">
+                Store the user's preference in local storage, update css variables..
+            </p>
+        
+            <!-- Deadline & Status -->
+            <div class="flex justify-between items-end mt-4">
+                <div>
+                    <strong class="text-gray-500 text-xs">Deadline</strong>
+                    <p class="text-gray-900 font-semibold">23 March 2025</p>
+                </div>
+                <button class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm font-medium transition duration-300 hover:bg-blue-400">
+                    Completed
+                </button>
+            </div>
+            </div>
+            <div class="bg-blue-50 p-4 rounded-xl shadow-md text-left">
+              <!-- Badge -->
+              <div class="bg-white px-3 py-1 rounded-md shadow text-gray-700 text-sm font-semibold inline-block">
+                  SwiftPay
+              </div>
+          
+              <!-- Title -->
+              <h2 class="text-lg font-bold mt-2">Optimize Home Page</h2>
+          
+              <!-- Description -->
+              <p class="bg-white p-2 rounded-lg text-gray-600 text-sm mt-2">
+                  Debug using chrome DevTools, check for update...
+              </p>
+          
+              <!-- Deadline & Status -->
+              <div class="flex justify-between items-end mt-4">
+                  <div>
+                      <strong class="text-gray-500 text-xs">Deadline</strong>
+                      <p class="text-gray-900 font-semibold">25 March 2025</p>
+                  </div>
+                  <button class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm font-medium transition duration-300 hover:bg-blue-400">
+                      Completed
+                  </button>
+              </div>
+            </div> 
+            <div class="bg-blue-50 p-4 rounded-xl shadow-md text-left">
+              <!-- Badge -->
+              <div class="bg-white px-3 py-1 rounded-md shadow text-gray-700 text-sm font-semibold inline-block">
+                  Meta
+              </div>
+          
+              <!-- Title -->
+              <h2 class="text-lg font-bold mt-2">Add new emoji🤲 </h2>
+          
+              <!-- Description -->
+              <p class="bg-white p-2 rounded-lg text-gray-600 text-sm mt-2">
+                  Store the user's preference in local storage, update css variables..
+              </p>
+          
+              <!-- Deadline & Status -->
+              <div class="flex justify-between items-end mt-4">
+                  <div>
+                      <strong class="text-gray-500 text-xs">Deadline</strong>
+                      <p class="text-gray-900 font-semibold">23 March 2025</p>
+                  </div>
+                  <button class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm font-medium  transition duration-300 hover:bg-blue-400">
+                      Completed
+                  </button>
+              </div>
+            </div>  
+            <div class="bg-blue-50 p-4 rounded-xl shadow-md text-left">
+              <!-- Badge -->
+              <div class="bg-white px-3 py-1 rounded-md shadow text-gray-700 text-sm font-semibold inline-block">
+                  Google LLC
+              </div>
+          
+              <!-- Title -->
+              <h2 class="text-lg font-bold mt-2">Integrate OpenAI API </h2>
+          
+              <!-- Description -->
+              <p class="bg-white p-2 rounded-lg text-gray-600 text-sm mt-2">
+                  Store the user's preference in local storage, update css variables..
+              </p>
+          
+              <!-- Deadline & Status -->
+              <div class="flex justify-between items-end mt-4">
+                  <div>
+                      <strong class="text-gray-500 text-xs">Deadline</strong>
+                      <p class="text-gray-900 font-semibold">23 March 2025</p>
+                  </div>
+                  <button class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm font-medium transition duration-300 hover:bg-blue-400">
+                      Completed
+                  </button>
+              </div>
+            </div>       
+            <div class="bg-blue-50 p-4 rounded-xl shadow-md text-left">
+              <!-- Badge -->
+              <div class="bg-white px-3 py-1 rounded-md shadow text-gray-700 text-sm font-semibold inline-block">
+                  Glassdoar
+              </div>
+          
+              <!-- Title -->
+              <h2 class="text-lg font-bold mt-2">Improve Job Searching </h2>
+          
+              <!-- Description -->
+              <p class="bg-white p-2 rounded-lg text-gray-600 text-sm mt-2">
+                  Debug using Chrome DevTools, check for overlapping..
+              </p>
+          
+              <!-- Deadline & Status -->
+              <div class="flex justify-between items-end mt-4">
+                  <div>
+                      <strong class="text-gray-500 text-xs">Deadline</strong>
+                      <p class="text-gray-900 font-semibold">23 March 2025</p>
+                  </div>
+                  <button class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm font-medium transition duration-300 hover:bg-blue-400">
+                      Completed
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <!-- Activity log -->
+    <div
+    class="ml-5 p-4 rounded-xl bg-white col-span-3 row-span-4 flex flex-col gap-4"
+    >
+    <div class="flex justify-center">
+      <img src="./assets/activity.png" alt="">
+      <h2 class="text-2xl font-semibold px-2">Activity Log</h2>
+    </div>
+    <button class="btn bg-blue-600 text-white px-4 py-2 rounded-lg transition duration-300 hover:bg-blue-400">
+      Clear History
+    </button>
+    <p class="text-gray-600 bg-blue-50 p-2 rounded-lg">
+      ✅ You have completed "Add Dark Mode" at 12:48 PM
+    </p>
+    <p class="text-gray-600 bg-blue-50 p-2 rounded-lg">
+      ✅ You have completed "Add Dark Mode" at 12:48 PM
+    </p>
+    </div>
+
   </body>
 </html>
