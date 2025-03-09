@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - JavaScript DOM Questions</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+</head>
+<body class="bg-blue-50 p-10">
+    <!-- Navbar -->
+    <nav class="navbar bg-base-100 shadow-md flex justify-between px-6 rounded-lg">
+        <div class="flex items-center">
+            <img src="./assets/logo.png" alt="Logo" class="h-10 w-auto">
+            <h1 class="text-3xl font-bold pl-3">Dev<b>Board</b></h1>
+        </div>
+        <button class="btn btn-square btn-ghost hover:scale-105 rounded-xl">
+            <img src="./assets/theme-btn.png" alt="Theme Switch">
+        </button>
+    </nav>
+
+    <!-- Blog Section -->
+    <div class="container mx-auto mt-10 l">
+        <h2 class="text-4xl font-bold text-center mb-8">JavaScript DOM Questions</h2>
+
+        <div class="space-y-6">
+            <!-- Question 1 -->
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-600">📌 What are the different ways to select an element in the DOM?</h3>
+                <p class="mt-3 text-gray-700">
+                    There are several ways to select elements in the DOM:
+                    <ul class="list-disc pl-5 mt-2">
+                        <li><b>getElementById("id")</b> - Selects an element by its ID.</li>
+                        <li><b>getElementsByClassName("class")</b> - Selects elements by class (HTMLCollection).</li>
+                        <li><b>getElementsByTagName("tag")</b> - Selects elements by tag name.</li>
+                        <li><b>querySelector("selector")</b> - Selects the first matching CSS selector.</li>
+                        <li><b>querySelectorAll("selector")</b> - Selects all elements matching a CSS selector.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-600">📌 What is the difference between innerHTML, innerText, and textContent?</h3>
+                <p class="mt-3 text-gray-700">
+                    <b>innerHTML</b>: Returns or sets HTML content inside an element.<br>
+                    <b>innerText</b>: Returns only visible text (ignores hidden elements).<br>
+                    <b>textContent</b>: Returns all text inside an element, including hidden text but without parsing HTML.
+                </p>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-600">📌 What is event delegation in the DOM?</h3>
+                <p class="mt-3 text-gray-700">
+                    Event delegation is a technique where a parent element listens for events on child elements instead of attaching event listeners to each child individually. This is useful for dynamically added elements.
+                </p>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-600">📌 What is event bubbling in the DOM?</h3>
+                <p class="mt-3 text-gray-700">
+                    Event bubbling is when an event starts from the target element and propagates up to parent elements.
+                </p>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-600">📌 How do you create, add, and remove elements using JavaScript?</h3>
+                <p class="mt-3 text-gray-700">
+                    - <b>Create:</b> `document.createElement("tag")`<br>
+                    - <b>Add:</b> `parentElement.appendChild(newElement)`<br>
+                    - <b>Remove:</b> `element.remove()`
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
