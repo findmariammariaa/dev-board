@@ -15,6 +15,44 @@
       type="text/css"
     />
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <style>
+      
+@plugin "daisyui/theme" {
+  name: "mine";
+  default: false;
+  prefersdark: false;
+  color-scheme: "dark";
+  --color-base-100: oklch(28% 0.141 291.089);
+  --color-base-200: oklch(38% 0.189 293.745);
+  --color-base-300: oklch(43% 0.232 292.759);
+  --color-base-content: oklch(94% 0.029 294.588);
+  --color-primary: oklch(97% 0.014 254.604);
+  --color-primary-content: oklch(27% 0.072 132.109);
+  --color-secondary: oklch(81% 0.111 293.571);
+  --color-secondary-content: oklch(28% 0.141 291.089);
+  --color-accent: oklch(80% 0.114 19.571);
+  --color-accent-content: oklch(25% 0.092 26.042);
+  --color-neutral: oklch(38% 0.189 293.745);
+  --color-neutral-content: oklch(96% 0.016 293.756);
+  --color-info: oklch(68% 0.169 237.323);
+  --color-info-content: oklch(97% 0.013 236.62);
+  --color-success: oklch(70% 0.14 182.503);
+  --color-success-content: oklch(98% 0.014 180.72);
+  --color-warning: oklch(76% 0.188 70.08);
+  --color-warning-content: oklch(98% 0.022 95.277);
+  --color-error: oklch(63% 0.237 25.331);
+  --color-error-content: oklch(97% 0.013 17.38);
+  --radius-selector: 2rem;
+  --radius-field: 0rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+    </style>
   </head>
   <body class="bg-primary lg:p-10 lg:pt-5 ">
     <div class="navbar bg-white shadow-sm flex justify-between px-6 rounded-lg">
@@ -224,7 +262,7 @@
 
     </div>
     <!-- Activity log -->
-    <div class="lg:ml-5 p-4 rounded-xl bg-white col-span-3 row-span-4 flex flex-col gap-4 lg:w-1/4" id="activity">
+    <div class="lg:ml-5 p-4 rounded-xl bg-white col-span-3 row-span-4 flex flex-col gap-4 lg:w-1/4">
       <div class="flex justify-center">
         <img src="./assets/activity.png" alt="">
         <h2 class="text-2xl font-semibold px-2 text-black">Activity Log</h2>
@@ -232,11 +270,11 @@
       <button class="btn bg-blue-600 text-white px-4 py-2 rounded-lg transition duration-300 hover:bg-blue-400" id="clear">
         Clear History
       </button>
-      <dic class="" id="a">
-        <p class="text-gray-600 bg-blue-50 p-2 rounded-lg">
+      <dic class="" id="activity">
+        <p class="text-gray-600 bg-blue-50 p-2 rounded-lg my-4">
           ✅ You have completed "Add Dark Mode" at 12:48 PM
         </p>
-        <p class="text-gray-600 bg-blue-50 p-2 rounded-lg">
+        <p class="text-gray-600 bg-blue-50 p-2 rounded-lg my-4">
           ✅ You have completed "Add Dark Mode" at 12:48 PM
         </p>
       </dic>

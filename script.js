@@ -18,7 +18,7 @@ document.addEventListener("click", function(event) {
         let taskName = taskContainer.querySelector("h2").innerText;
 
         activity.innerHTML += `
-            <p class="text-gray-600 bg-blue-50 p-2 rounded-lg">
+            <p class="text-gray-600 bg-blue-50 p-2 rounded-lg my-4">
                 ✅ You have completed "${taskName}" at ${instant_time}
             </p>
         `;
@@ -31,5 +31,5 @@ document.addEventListener("click", function(event) {
     
 });
 clear.addEventListener("click", function() {
-    activity.querySelectorAll("p").forEach(p => p.remove());
+    activity.innerHTML = "";
 });
