@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="">
+<html data-theme="luxury">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,16 +16,16 @@
     />
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
   </head>
-  <body class="bg-blue-50 lg:p-10 lg:pt-5 ">
+  <body class="bg-primary lg:p-10 lg:pt-5 ">
     <div class="navbar bg-white shadow-sm flex justify-between px-6 rounded-lg">
       <div class="flex">
         <img src="./assets/logo.png" alt="" />
-        <h1 class="text-3xl pt-1">Dev<b>Board</b></h1>
+        <h1 class="text-3xl pt-1 text-black">Dev<b>Board</b></h1>
       </div>
       <div class="flex">
         <button class="btn btn-square btn-ghost lg:mx-7 hidden lg:flex">
           <img src="./assets/checkbox.png" alt=""/>
-          <h1 class="text-xl" id="count">29</h1>
+          <h1 class="text-xl text-black" id="count">29</h1>
         </button>
         <button class="btn btn-square btn-ghost hover:scale-105 rounded-xl" id="theme">
           <img src="./assets/theme-btn.png" alt="" />
@@ -38,7 +38,7 @@
         <div class="col-span-2 lg:col-span-3 lg:row-span-1  p-6 rounded-xl bg-blue-50 shadow-md lg:flex justify-between items-center">
  
           <img src="./assets/checkbox.png" alt="" class="w-auto">
-          <div class="lg:px-3">
+          <div class="lg:px-3 ">
             <span class="text-sm font-bold text-gray-500">Task Assigned</span>
             <p class="text-4xl font-bold text-blue-600 mt-2" id="task_assigned">06</p>
           </div>
@@ -58,7 +58,7 @@
         >
         <img src="./assets/calender.png" alt="" class="w-auto">
           <div class="text-left">
-            <p class="text-lg" id="day-text">Wed,</p>
+            <p class="text-lg text-black" id="day-text">Wed,</p>
             <p class="text-xl font-bold text-black" id="date-text">Jul 28 2025</p>
           </div>
         </div>
@@ -76,7 +76,7 @@
               </div>
           
               <!-- Title -->
-              <h2 class="text-lg font-bold mt-2 h-15 lg:h-auto">Fix Mobile Button Issue</h2>
+              <h2 class="text-lg font-bold mt-2  text-black">Fix Mobile Button Issue</h2>
           
               <!-- Description -->
               <p class="bg-white p-2 rounded-lg text-gray-600 text-sm mt-2 h-30 lg:h-auto">
@@ -101,7 +101,7 @@
             </div>
         
             <!-- Title -->
-            <h2 class="text-lg font-bold mt-2 h-15 lg:h-auto">Add Dark Mode</h2>
+            <h2 class="text-lg font-bold mt-2  text-black">Add Dark Mode</h2>
         
             <!-- Description -->
             <p class="bg-white p-2 rounded-lg text-gray-600 text-sm mt-2 h-30 lg:h-auto">
@@ -126,7 +126,7 @@
               </div>
           
               <!-- Title -->
-              <h2 class="text-lg font-bold mt-2  h-15 lg:h-auto">Optimize Home Page</h2>
+              <h2 class="text-lg font-bold mt-2   text-black">Optimize Home Page</h2>
           
               <!-- Description -->
               <p class="bg-white p-2 rounded-lg text-gray-600 text-sm mt-2 h-30 lg:h-auto">
@@ -151,7 +151,7 @@
               </div>
           
               <!-- Title -->
-              <h2 class="text-lg font-bold mt-2 h-15 lg:h-auto">Add new emoji</h2>
+              <h2 class="text-lg font-bold mt-2  text-black">Add new emoji</h2>
           
               <!-- Description -->
               <p class="bg-white p-2 rounded-lg text-gray-600 text-sm mt-2 h-30 lg:h-auto">
@@ -176,7 +176,7 @@
               </div>
           
               <!-- Title -->
-              <h2 class="text-lg font-bold mt-2 h-15 lg:h-auto">Integrate OpenAI API </h2>
+              <h2 class="text-lg font-bold mt-2  text-black">Integrate OpenAI API </h2>
           
               <!-- Description -->
               <p class="bg-white p-2 rounded-lg text-gray-600 text-sm mt-2 h-30 lg:h-auto">
@@ -201,7 +201,7 @@
               </div>
           
               <!-- Title -->
-              <h2 class="text-lg font-bold mt-2 h-15 lg:h-auto">Improve Job Searching </h2>
+              <h2 class="text-lg font-bold mt-2  text-black">Improve Job Searching </h2>
           
               <!-- Description -->
               <p class="bg-white p-2 rounded-lg text-gray-600 text-sm mt-2 h-30 lg:h-auto">
@@ -227,17 +227,19 @@
     <div class="lg:ml-5 p-4 rounded-xl bg-white col-span-3 row-span-4 flex flex-col gap-4 lg:w-1/4" id="activity">
       <div class="flex justify-center">
         <img src="./assets/activity.png" alt="">
-        <h2 class="text-2xl font-semibold px-2">Activity Log</h2>
+        <h2 class="text-2xl font-semibold px-2 text-black">Activity Log</h2>
       </div>
       <button class="btn bg-blue-600 text-white px-4 py-2 rounded-lg transition duration-300 hover:bg-blue-400" id="clear">
         Clear History
       </button>
-      <p class="text-gray-600 bg-blue-50 p-2 rounded-lg">
-        ✅ You have completed "Add Dark Mode" at 12:48 PM
-      </p>
-      <p class="text-gray-600 bg-blue-50 p-2 rounded-lg">
-        ✅ You have completed "Add Dark Mode" at 12:48 PM
-      </p>
+      <dic class="" id="a">
+        <p class="text-gray-600 bg-blue-50 p-2 rounded-lg">
+          ✅ You have completed "Add Dark Mode" at 12:48 PM
+        </p>
+        <p class="text-gray-600 bg-blue-50 p-2 rounded-lg">
+          ✅ You have completed "Add Dark Mode" at 12:48 PM
+        </p>
+      </dic>
     </div>
     <script src="./utilities.js"></script>
     <script src="./script.js"></script>

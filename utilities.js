@@ -7,13 +7,14 @@ document.getElementById("date-text").innerText = formattedDate[1] + formattedDat
 
 let instant_time = new Date().toLocaleTimeString();
 
+const themes = [
+  "light", "dark", "cupcake", "bumblebee", "emerald", "corporate",
+  "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden",
+  "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black",
+  "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade",
+  "night", "nord", "sunset", "dim", "coffee", "winter"
+];
 
-  const themes = [
-    "light", "emerald",
-    "corporate", "synthwave", "retro", "cyberpunk", "valentine",
-    "halloween", "garden", "forest", "aqua", "lofi", "pastel",
-    "fantasy", "wireframe", "black", "luxury", "dracula"
-  ];
 
   let currentThemeIndex = 0;
 
